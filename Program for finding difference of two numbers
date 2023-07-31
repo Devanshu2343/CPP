@@ -1,0 +1,14 @@
+//Program for finding difference of two numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"Enter first number  :  " << endl;
+    cin>>a;
+    cout<<"Enter second number  :  " << endl;
+    cin>>b;
+    c=a-b;
+    cout<<"Difference of two numbers are  :  " <<c;
+    return 0;
+}
