@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class Student {
+private :
+    char name [30];
+    int rollNo;
+    string sec;
+    public:
+    //to get student details
+    void getDetails();
+    //to print student details
+    void putDetails();
+    };
+
+//function definition outside the class
+
+void Student :: getDetails()
+{
+    cout<<"Enter Name : " ;
+    cin >> name ;
+    cout <<"Enter Roll No : " ;
+    cin>> rollNo;
+    cout << " Enter the Section : " ;
+    cin >> sec ;
+
+}
+
+void Student :: putDetails()
+{
+    cout <<"Student Details : "<<endl ;
+    cout << "Name : " <<name <<endl << "Roll No : " << rollNo <<endl <<"Section : " << sec ;
+
+
+}
+int main ()
+{
+    Student std1;
+    std1.getDetails();
+    std1.putDetails();
+
+    return 0;
+}
