@@ -1,0 +1,12 @@
+//Program for writing into file
+#include<iostream>
+#include<fstream>
+using namespace std ;
+int main(){
+    ofstream outfile ("my.txt");
+    outfile<<"Hello" <<endl ;
+    outfile <<101 ;
+    outfile.close();
+    return 0;
+
+}
