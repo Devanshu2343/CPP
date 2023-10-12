@@ -1,0 +1,23 @@
+//Program for wreading from file and displaying the output
+#include<iostream>
+#include<fstream>
+using namespace std ;
+int main(){
+    ifstream infile ;
+    if (!infile){
+        cout<<"File can not be opened ";
+    }
+   infile.open("my.txt");
+    string str;
+    int x;
+    infile>>str;
+    infile>>x;
+    cout <<str <<endl;
+    cout<<x<<endl;
+    if(infile.eof()){
+        cout<<"End of file is reached";
+    }
+    infile.close();
+    return 0;
+}
+
